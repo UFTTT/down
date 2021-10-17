@@ -53,4 +53,3 @@ for y in range(threads):
 	else:
 		th = threading.Thread(target = run2)
 		th.start()
-© 2021 GitHub, Inc.
